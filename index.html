@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/27bb832afb.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet"> <!--icon-->
+    <link rel="icon" href="image/logoJ.png" type="image/x-icon">
+
+    <!-- FOR CAROUSEL -->
+
+    <title>Portfolio | Jeffrey J</title>
+
+</head>
+<body id="whole">
+    <div id="header">
+        <!-- ------------NAVIGATION BAR ---------------->
+        <nav>
+            
+            <a href="#" class="brand"><i class="fa-solid fa-code" style="color: #f2c100;"></i> J</i></a>
+            <ul id="sidemenu">
+                <li><a href="#header" class="navi active">Home</a></li>
+                <li><a href="#about" class="navi">About</a></li>
+                <li><a href="#resume" class="navi">Resume</a></li>
+                <li><a href="#services" class="navi">Services</a></li>
+                <li><a href="#portfolio" class="navi">Portfolio</a></li>
+                <li><a href="#contact"class="navi">Contact</a></li>
+                <li><img src="image/moon-fill.png" id="icon"></li>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="container">
+            <div class="header-text">
+                <p>Aspiring Software Developer</p>
+                <h1>Hi, I'm <span>Jeff</span><br> from Philippines</h1>
+                <a href="https://www.facebook.com/jefuriii.j/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/jeff_zny/" style="text-decoration: none;" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+    <!---------ABOUT------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p align="justify">Hey there! My name is Jeffrey Jaguimit, but feel free to call me Jeff. 
+                        I have aspirations to become a software developer and also pursue a career 
+                        as a graphic designer or UI/UX developer. I have a great passion for designing 
+                        and coding, as well as all things related to technology.
+                    </p>
+                    
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('b-info')">Brief Info</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="b-info">
+                            <ul>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #f2c100;"></i> <strong>E-mail:</strong> jeffreyjaguimit@gmail.com</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #f2c100;"></i> <strong>Phone:</strong> +63 998 356 6875</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #f2c100;"></i> <strong>Place:</strong> Valenzuela, Metro Manila</li>
+                                <li><i class="fa-solid fa-chevron-right" style="color: #f2c100;"></i> <strong>Educational Attainment:</strong> Bachelors Degree</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App</li>
+                                <li><span>Web Development</span><br>Web Application Development</li>
+                                <li><span>Photo Editing</span><br>Creating Graphic Design/Publication Materials</li>
+                                <li><span>Video Editing</span><br>Creating Promotional Videos using Adobe Software</li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - 2022</span><br>Internship - Philippine National Police</li>
+                                <!-- <li><span>2019 - 2021</span><br>Team Lead</li>
+                                <li><span>2017 - 2019</span><br>UI/UX Design Executive</li>
+                                <li><span>2016 - 2017</span><br>Intership</li> -->
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018 - 2022</span><br>Tertiary | Technological University of the Philippines - Manila
+                                    <p><em>Bachelor of Engineering Technology major in Computer Engineering Technology</em></p></li>
+                                <li><span>2016 - 2018</span><br>Senior High School | STI College - Caloocan 
+                                    <p><em>ICT - Major in Mobile App and Web Development</em></p></li>
+                                <li><span>2012 - 2016</span><br>Junior High School | St. Louis College Valenzuela</li>
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="interest" class="interest"> <!-- ----------------------INTEREST PART--------------------- -->
+        <div class="container">
+            <h1 class="sub-title">Interest</h1>
+            <div class="interest-list">
+                <div>
+                    <i class="ri-netflix-fill" style="color: #db0000;"></i>
+                    <h2>Watching Movies</h2>
+                    <!-- <p>Mag design ng web</p> -->
+                    <!-- <a href="#">Learn more</a> -->
+                </div>    
+                <div>
+                    <i class="ri-book-read-line" style="color: rgb(166, 202, 255);"></i>
+                    <h2>Reading</h2>
+                </div>    
+                <div>
+                    <i class="fa-solid fa-crosshairs" style="color: #59ff38;"></i>
+                    <h2>Online Games</h2>
+                </div>    
+                <div>
+                    <i class="fa-solid fa-music" style="color: #d138ff;"></i>
+                    <h2>Listening Music</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop" style="color: #0b9dff;"></i>
+                    <h2>Graphic Design</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-photo-film" style="color: #c080b7;"></i>
+                    <h2>Video Edit</h2>
+                </div>                
+                <div>
+                    <i class="fa-solid fa-business-time" style="color: aquamarine;"></i>
+                    <h2>Business</h2>
+                </div>                
+                <div>
+                    <i class="fa-solid fa-guitar" style="color: tomato;"></i>
+                    <h2>Instrument</h2>
+                </div>                
+                <div>
+                    <i class="ri-plant-fill" style="color: palegreen;"></i>
+                    <h2>Plants</h2>
+                </div>                
+                <div>
+                    <i class="fa-brands fa-discord" style="color: #7289da"></i>
+                    <h2>Discord</h2>
+                </div>                
+                <div>
+                    <i class="fa-solid fa-globe" style="color: rgb(215, 255, 142);"></i>
+                    <h2>Browsing Internet</h2>
+                </div>                
+                <div>
+                    <i class="ri-facebook-circle-fill" style="color: #4267B2;"></i>
+                    <h2>Social Media</h2>
+                </div>                
+                <div>
+                    <i class="fa-solid fa-microchip" style="color: chocolate;"></i>
+                    <h2>Technology</h2>
+                </div>                
+                <div>
+                    <i class="fa-solid fa-basketball" style="color: orangered;"></i>
+                    <h2>Sports</h2>
+                </div>                
+                <div>
+                    <i class="fa-solid fa-heart-pulse" style="color: palegreen;"></i>
+                    <h2>Health</h2>
+                </div>                
+            </div>        
+        </div>
+    </div>
+    
+
+    
+    
+    <div id="resume"> <!-- ----------------------RESUME--------------------- -->
+        <section class="resume">
+            <div class="container">
+        
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3 class="resume-title">Academic Records</h3>
+                  <div class="resume-item">
+                    <h4>Technological University of the Philippines - Manila</h4>
+                    <h5>2018 - 2022</h5>
+                    <p><em>Bachelor of Engineering Technology <span></span><br> major in Computer Engineering Technology</em></p>
+                    
+                  </div>
+                  <div class="resume-item">
+                    <h4>STI College - Caloocan</h4>
+                    <h5>2016-2018</h5>
+                    <p><em>ICT - Major in Mobile App and Web Development</em></p>
+                    <p>
+                    <ul>
+                      <li>Computer Programming NC III - Java & .Net Technology</li>
+                      <li>HTML, CSS, Java, Javascript, C#, C++, Android App Development</li>
+                    </ul>
+                    </p>
+                  </div>
+                  <div class="resume-item">
+                    <h4>St. Louis College - Valenzuela</h4>
+                    <h5>2012-2016</h5>
+                    <p><em>Junior High Shool</em></p>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <h3 class="resume-title">Internship/Experiences</h3>
+
+                  <div class="resume-item">
+                    <h4>Philippine National Police - Camp Crame</h4>
+                    <h5>April - August 2022</h5>
+                    <p><em>OJT Trainee</em></p>
+                    <li>Completed 720 hours of On-the-Job Training</li>
+                    <li>Graphic Designer</li>
+                    <li>Developer</li>
+                    <li>Clerk</li>
+                  </div>
+                  <div class="resume-item">
+                    <h4>Software Proficiency</h4>
+                    <h5>Since 2016</h5>
+                    <p><em></em></p>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Premiere Pro</li>
+                    <li>Canva</li>
+                    <li>Graphic Design</li>
+                    <li>Proficient in Microsoft Office</li>
+                    <li>Basic Projects</li>
+                  </div>
+                </div>
+              
+           </div>
+              <div class="section-title mt-5">
+                <h2 class="resume-title">Certificates</h2>
+                <p>Seminars / Webinars</p>
+              </div>
+              <!-- -------------------------CAROUSEL Webinar---------------------------------- -->
+              <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                  <img src="image/Udemy.png" alt="img" draggable="false">
+                  <img src="image/certificate1.png" alt="img" draggable="false">
+                  <img src="image/certificate2.png" alt="img" draggable="false">
+                  <img src="image/certificate3.png" alt="img" draggable="false">
+                  <img src="image/certificate4.png" alt="img" draggable="false">
+                  <img src="image/certificate5.png" alt="img" draggable="false">
+                  <img src="image/certificate6.png" alt="img" draggable="false">
+                  <img src="image/certificate7.png" alt="img" draggable="false">
+                  <img src="image/certificate8.png" alt="img" draggable="false">
+                  <img src="image/certificate9.png" alt="img" draggable="false">
+                  <img src="image/certificate10.png" alt="img" draggable="false">
+                  <img src="image/certificate11.png" alt="img" draggable="false">
+                  <img src="image/certificate12.png" alt="img" draggable="false">
+                  <img src="image/certificate13.png" alt="img" draggable="false">
+                  <img src="image/certificate14.png" alt="img" draggable="false">
+                  <img src="image/certificate15.png" alt="img" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+
+              <!-- ----------------------------END CAROUSEL----------------------------- -->
+              <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="resume-item">
+                        <h4>Udemy</h4>
+                        <ul><li><strong>CSS, Bootstrap And JavaScript And Python Stack Course</strong> <h6>Course</h6><br> <em>7.5hrs - June 29, 2023</em></li>
+                        </ul>
+                        </div>
+                  <div class="resume-item">
+                    <h4>Department of Information and Communications Technology</h4>
+                    <ul>
+                      <li><strong>Analyzing Data Using MS Excel Pivoting</strong> <h6>Webinar</h6> <br> <em>3hrs, July 13, 2022</em></li>
+                      <li><strong>ICT for Academic Purposes</strong> <h6>Webinar</h6> <br> <em>3hrs - June 25, 2022</em></li>
+                      <li><strong>Technological Trends: from AI to Quantum Computing</strong> <h6>Webinar</h6><br> <em>3hrs - June 22, 2022</em></li>
+                      <li><strong>Productivity Tools to Start Up your Online Career</strong> <h6>Webinar</h6><br> <em>3hrs - June 21, 2022</em></li>
+                      <li><strong>Creating Interactive Learning Video with Filmora</strong> <h6>Webinar</h6><br> <em>3hrs - June 20, 2022</em></li>
+                      <li><strong>Understanding Technology - Hardware and Internet</strong> <h6>Webinar</h6><br> <em>3hrs - June 20, 2022</em></li>
+                      <li><strong>Creating Instructional Videos for Distance Learning <h6>Webinar</h6><br> Featuring Loom</strong> <br> <em>3hrs - June 17, 2022</em></li>
+                      <li><strong>Introduction to Brand Building through Social Media</strong> <h6>Webinar</h6><br> <em>1hr - June 14, 2022</em></li>
+                      <li><strong>Preparing for the Metaverse: <h6>Webinar</h6><br> Cybersecurity Awareness and Blockchain Technology</strong></a> <br> <em>3hrs - June 13, 2022</em></li>
+                      <li><strong>Free Photo Editing Tool Available for Windows 11</strong> <h6>Webinar</h6> <br> <em>3hrs - June 9, 2022</em></li>
+                      <li><strong>Basic Microsoft PowerPoint Application</strong> <h6>Webinar</h6><br> <em>3hrs - May 20, 2022</em></li>
+                      <li><strong>Basic Microsoft Excel Application</strong> <h6>Webinar</h6><br> <em>3hrs - May 19, 2022</em></li>
+                      <li><strong>Basic Microsoft Word Application</strong> <h6>Webinar</h6><br> <em>3hrs - May 18, 2022</em></li>
+                     </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="resume-item">
+                    <h4>Technological University of the Philippines</h4>
+                    <ul><li><strong>Building Academic Integrity Using Turnitin</strong> <h6>Webinar</h6><br> <em>1hr - March 20, 2021</em></li>
+                    </ul>
+                    </div>
+                  <div class="resume-item">
+                    <h4>Trend Micro</h4>
+                    <ul><li><strong>Secure Learning <h6>Webinar</h6> <br> Introduction to the Internet of Things</strong><br> <em>2hrs - February 18, 2021</em></li>
+                    </ul>                    
+                  </div>
+                </div>
+                
+              </div>
+        
+            </div>
+          </section>
+        
+    </div>
+
+    
+    <div id="services"> <!-- --------------SERVICES------------------ -->
+        <div class="container">
+            <h1 class="sub-title"><span style="color: #f2c100;">My</span> Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating captivating and user-friendly web designs that leave a lasting impression.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I specialize in creating intuitive and visually appealing UI/UX designs that enhance user experiences and drive engagement</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>App Design</h2>
+                    <p>Crafting sleek and user-centric app designs that seamlessly combine aesthetics and functionality to deliver exceptional mobile experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-sharp fa-solid fa-print"></i>
+                    <h2>Printing Services</h2>
+                    <p>Print any design of your choice. I offer high-quality printing services that bring your ideas to life with precision, vibrant colors, and attention to detail. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Graphic Design</h2>
+                    <p>I showcase my expertise in graphic design, delivering visually striking and impactful creations.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h2>Video Edit</h2>
+                    <p>Demonstrate my skill in video editing, bringing your footage to life with seamless transitions, captivating effects, and a keen eye for storytelling.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <div id="portfolio"> <!-- -----------------PORTFOLIO-------------- -->
+        <div class="container">
+            <h1 class="sub-title"><span style="color: #f2c100;">My</span> Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>The App connects you</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Music stays within you!Feel the beat!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping</h3>
+                        <p>INKU Shopping!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#header" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------------CONTACT---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span style="color: #f2c100;">Me</span></h1>
+                    <p> <i class="fa-regular fa-envelope"></i> jeffreyjaguimit@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +63 998 356 6875</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/jefuriii.j/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/jeff_zny/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jeffrey-jaguimit/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV - JEFFREY JAGUIMIT.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            
+                <div class="contact-right">
+                    <form action="#">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" disabled>Submit</button>
+                    </form>
+                    <p style="font-size: 15px; color: red;">This form is currently unavailable. Use the contact above if you have any concerns.</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Jeff. Made with HTML, CSS & JavaScript <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+    <!-- TO LINK JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
